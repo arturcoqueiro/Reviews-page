@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root{
+    --font: 'Opens Sans', 'Arial';
+
+    --cor-1: #569644;
+    --cor-2: #59882F;
+    --cor-3: #1C3013;
+    --cor-4: #622295;
+    --cor-5: #71379F;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font);
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+}
+
+main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+h2{
+    text-transform: capitalize;
+    color: var(--cor-3);
+    font-size: 2.1rem;
+}
+
+.underline{
+    background-color: var(--cor-1);
+    height: 20px;
+    width: 150px;
+    margin: auto;
+}
