@@ -17,7 +17,7 @@
 body{
     font-family: var(--font);
     text-align: center;
-    background-color: rgb(206, 206, 206);
+    background-color: rgba(206, 206, 206, 0.671);
 }
 
 main{
@@ -30,17 +30,17 @@ h2{
     text-transform: capitalize;
     color: var(--cor-3);
     font-size: 2.1rem;
-    margin-top: 2.3rem;
+    margin-top: 2.5rem;
 }
 
 .underline{
     background-color: var(--cor-1);
     height: 4px;
-    width: 120px;
+    width: 100px;
     margin: auto;
     border-radius: 3px;
-    margin-bottom: 4.2rem;
-    margin-top: 2rem;
+    margin-bottom: 3.6rem;
+    margin-top: 1.6rem;
 }
 
 section{
@@ -53,6 +53,7 @@ article{
     transition: 0.5s;
     background-color: white;
     border-radius: 5px;
+    margin-bottom: 2em;
 }
 article:hover{
     box-shadow: 1px 2px 11px 4px rgba(0, 0, 0, 0.137);
@@ -103,7 +104,7 @@ article:hover{
 
 #author{
     text-transform: capitalize;
-    margin: 0.4rem 0 0.35rem 0;
+    margin: 0.5rem 0 0.35rem 0;
     color: var(--cor-5);
 }
 
@@ -120,4 +121,32 @@ article:hover{
     letter-spacing: 0.8px;
     font-size: 15px;
     margin-bottom: 0.8rem;
+}
+
+.prev-btn, .next-btn{
+    font-size: 23px;
+    margin: 0.4rem 0.7rem 0.7rem 0.7rem;
+    border: 0px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--cor-1);
+}
+.prev-btn:hover, .next-btn:hover{
+    color: var(--cor-4);
+}
+
+.random-btn{
+    padding: 0.3rem 0.4rem;
+    color: var(--cor-3);
+    border: 2px solid var(--cor-5);
+    border-radius: 4px;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-top: 0.6rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.random-btn:hover{
+    border: 2px var(--cor-1) solid;
+    color: var(--cor-4);
 }
