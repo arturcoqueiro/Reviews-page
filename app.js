@@ -45,3 +45,21 @@ const info = document.getElementById('info')
 const prev = document.querySelector('.prev-btn')
 const next = document.querySelector('.next-btn')
 const random_Btn = document.querySelector('.random-btn')
+
+window.addEventListener('DOMContentLoaded', function(){
+
+    console.log('BINGO')
+    showPerson()
+})
+
+var currentItem = 3
+
+function showPerson() {
+    
+    const item = reviews[currentItem]
+    img.src = item.img
+    author.textContent = item.name
+    job.textContent = item.job
+    info.textContent = item.text
+}
+
