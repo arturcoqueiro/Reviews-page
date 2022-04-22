@@ -42,8 +42,8 @@ const author = document.getElementById('author')
 const job = document.getElementById('job')
 const info = document.getElementById('info')
 
-const prev = document.querySelector('.prev-btn')
-const next = document.querySelector('.next-btn')
+const prev_Btn = document.querySelector('.prev-btn')
+const next_Btn = document.querySelector('.next-btn')
 const random_Btn = document.querySelector('.random-btn')
 
 window.addEventListener('DOMContentLoaded', function(){
@@ -52,14 +52,34 @@ window.addEventListener('DOMContentLoaded', function(){
     showPerson()
 })
 
-var currentItem = 3
+var i = 0
 
 function showPerson() {
     
-    const item = reviews[currentItem]
+    const item = reviews[i]
+
     img.src = item.img
     author.textContent = item.name
     job.textContent = item.job
     info.textContent = item.text
 }
 
+prev_Btn.addEventListener('click', function () {
+    
+    i--
+    if (i < 0){
+
+        i = reviews.length -1
+    }
+    showPerson()
+})
+
+next_Btn.addEventListener('click', function () {
+    
+    i++
+    if (i > reviews.length -1){
+
+        i = 0
+    }
+    showPerson()
+})
