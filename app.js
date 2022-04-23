@@ -83,3 +83,10 @@ next_Btn.addEventListener('click', function () {
     }
     showPerson()
 })
+
+random_Btn.addEventListener('click', function (){
+
+    console.log()
+    i = Math.floor(Math.random()*reviews.length)
+    showPerson()
+})
